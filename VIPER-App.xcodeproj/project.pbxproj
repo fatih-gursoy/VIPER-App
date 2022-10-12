@@ -9,21 +9,33 @@
 /* Begin PBXBuildFile section */
 		3DADF7C228F04C1D002CA958 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DADF7C128F04C1D002CA958 /* AppDelegate.swift */; };
 		3DADF7C428F04C1D002CA958 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DADF7C328F04C1D002CA958 /* SceneDelegate.swift */; };
-		3DADF7C628F04C1D002CA958 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DADF7C528F04C1D002CA958 /* ViewController.swift */; };
+		3DADF7C628F04C1D002CA958 /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DADF7C528F04C1D002CA958 /* HomeVC.swift */; };
 		3DADF7C928F04C1D002CA958 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3DADF7C728F04C1D002CA958 /* Main.storyboard */; };
 		3DADF7CB28F04C1E002CA958 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3DADF7CA28F04C1E002CA958 /* Assets.xcassets */; };
 		3DADF7CE28F04C1E002CA958 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3DADF7CC28F04C1E002CA958 /* LaunchScreen.storyboard */; };
+		3DADF7D728F04F45002CA958 /* HomeContracts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DADF7D628F04F45002CA958 /* HomeContracts.swift */; };
+		3DADF7DF28F056F2002CA958 /* ArticleModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DADF7DE28F056F2002CA958 /* ArticleModel.swift */; };
+		3DADF7E328F71E02002CA958 /* HomeInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DADF7E228F71E02002CA958 /* HomeInteractor.swift */; };
+		3DADF7E528F71E1B002CA958 /* HomePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DADF7E428F71E1A002CA958 /* HomePresenter.swift */; };
+		3DADF7E728F71E31002CA958 /* HomeRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DADF7E628F71E31002CA958 /* HomeRouter.swift */; };
+		3DADF7EA28F7211B002CA958 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DADF7E928F7211B002CA958 /* NetworkManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		3DADF7BE28F04C1D002CA958 /* VIPER-App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "VIPER-App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3DADF7C128F04C1D002CA958 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3DADF7C328F04C1D002CA958 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		3DADF7C528F04C1D002CA958 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		3DADF7C528F04C1D002CA958 /* HomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
 		3DADF7C828F04C1D002CA958 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		3DADF7CA28F04C1E002CA958 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3DADF7CD28F04C1E002CA958 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3DADF7CF28F04C1E002CA958 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3DADF7D628F04F45002CA958 /* HomeContracts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeContracts.swift; sourceTree = "<group>"; };
+		3DADF7DE28F056F2002CA958 /* ArticleModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleModel.swift; sourceTree = "<group>"; };
+		3DADF7E228F71E02002CA958 /* HomeInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeInteractor.swift; sourceTree = "<group>"; };
+		3DADF7E428F71E1A002CA958 /* HomePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePresenter.swift; sourceTree = "<group>"; };
+		3DADF7E628F71E31002CA958 /* HomeRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeRouter.swift; sourceTree = "<group>"; };
+		3DADF7E928F7211B002CA958 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +68,93 @@
 		3DADF7C028F04C1D002CA958 /* VIPER-App */ = {
 			isa = PBXGroup;
 			children = (
-				3DADF7C128F04C1D002CA958 /* AppDelegate.swift */,
-				3DADF7C328F04C1D002CA958 /* SceneDelegate.swift */,
-				3DADF7C528F04C1D002CA958 /* ViewController.swift */,
-				3DADF7C728F04C1D002CA958 /* Main.storyboard */,
-				3DADF7CA28F04C1E002CA958 /* Assets.xcassets */,
-				3DADF7CC28F04C1E002CA958 /* LaunchScreen.storyboard */,
-				3DADF7CF28F04C1E002CA958 /* Info.plist */,
+				3DADF7DA28F05408002CA958 /* App */,
+				3DADF7DB28F0540F002CA958 /* Storyboard */,
+				3DADF7E028F71DD2002CA958 /* Common */,
+				3DADF7DC28F0541F002CA958 /* Modules */,
+				3DADF7D928F053AA002CA958 /* Resources */,
 			);
 			path = "VIPER-App";
+			sourceTree = "<group>";
+		};
+		3DADF7D528F04EEF002CA958 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				3DADF7C528F04C1D002CA958 /* HomeVC.swift */,
+				3DADF7D628F04F45002CA958 /* HomeContracts.swift */,
+				3DADF7E228F71E02002CA958 /* HomeInteractor.swift */,
+				3DADF7E428F71E1A002CA958 /* HomePresenter.swift */,
+				3DADF7E628F71E31002CA958 /* HomeRouter.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		3DADF7D928F053AA002CA958 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				3DADF7CA28F04C1E002CA958 /* Assets.xcassets */,
+				3DADF7CF28F04C1E002CA958 /* Info.plist */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		3DADF7DA28F05408002CA958 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				3DADF7C128F04C1D002CA958 /* AppDelegate.swift */,
+				3DADF7C328F04C1D002CA958 /* SceneDelegate.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		3DADF7DB28F0540F002CA958 /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				3DADF7C728F04C1D002CA958 /* Main.storyboard */,
+				3DADF7CC28F04C1E002CA958 /* LaunchScreen.storyboard */,
+			);
+			path = Storyboard;
+			sourceTree = "<group>";
+		};
+		3DADF7DC28F0541F002CA958 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				3DADF7D528F04EEF002CA958 /* Home */,
+				3DADF7DD28F0542C002CA958 /* Detail */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		3DADF7DD28F0542C002CA958 /* Detail */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Detail;
+			sourceTree = "<group>";
+		};
+		3DADF7E028F71DD2002CA958 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				3DADF7E828F7210B002CA958 /* API */,
+				3DADF7E128F71DE1002CA958 /* Entity */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		3DADF7E128F71DE1002CA958 /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+				3DADF7DE28F056F2002CA958 /* ArticleModel.swift */,
+			);
+			path = Entity;
+			sourceTree = "<group>";
+		};
+		3DADF7E828F7210B002CA958 /* API */ = {
+			isa = PBXGroup;
+			children = (
+				3DADF7E928F7211B002CA958 /* NetworkManager.swift */,
+			);
+			path = API;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,9 +228,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3DADF7C628F04C1D002CA958 /* ViewController.swift in Sources */,
+				3DADF7EA28F7211B002CA958 /* NetworkManager.swift in Sources */,
+				3DADF7E528F71E1B002CA958 /* HomePresenter.swift in Sources */,
+				3DADF7C628F04C1D002CA958 /* HomeVC.swift in Sources */,
 				3DADF7C228F04C1D002CA958 /* AppDelegate.swift in Sources */,
 				3DADF7C428F04C1D002CA958 /* SceneDelegate.swift in Sources */,
+				3DADF7E328F71E02002CA958 /* HomeInteractor.swift in Sources */,
+				3DADF7E728F71E31002CA958 /* HomeRouter.swift in Sources */,
+				3DADF7D728F04F45002CA958 /* HomeContracts.swift in Sources */,
+				3DADF7DF28F056F2002CA958 /* ArticleModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -289,7 +385,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = AWRMXDZRF7;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "VIPER-App/Info.plist";
+				INFOPLIST_FILE = "VIPER-App/Resources//Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -317,7 +413,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = AWRMXDZRF7;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "VIPER-App/Info.plist";
+				INFOPLIST_FILE = "VIPER-App/Resources//Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
