@@ -25,6 +25,4 @@ class HomeInteractor: HomeInteractorProtocol {
             self.presenter?.didFetch(result.articles)
         }
     }
-    
-    
 }

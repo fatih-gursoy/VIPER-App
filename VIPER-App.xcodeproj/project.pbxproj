@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		3D411A7328F847A50003B4A7 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 3D411A7228F847A50003B4A7 /* Kingfisher */; };
+		3D411A7528F855510003B4A7 /* DetailRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D411A7428F855510003B4A7 /* DetailRouter.swift */; };
+		3D411A7728F855660003B4A7 /* DetailContracts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D411A7628F855660003B4A7 /* DetailContracts.swift */; };
+		3D411A7928F855760003B4A7 /* DetailPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D411A7828F855760003B4A7 /* DetailPresenter.swift */; };
 		3D51131128F8102C0080BBA5 /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D51131028F8102C0080BBA5 /* Result.swift */; };
 		3DADF7C228F04C1D002CA958 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DADF7C128F04C1D002CA958 /* AppDelegate.swift */; };
 		3DADF7C428F04C1D002CA958 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DADF7C328F04C1D002CA958 /* SceneDelegate.swift */; };
@@ -27,6 +30,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3D411A7428F855510003B4A7 /* DetailRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailRouter.swift; sourceTree = "<group>"; };
+		3D411A7628F855660003B4A7 /* DetailContracts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailContracts.swift; sourceTree = "<group>"; };
+		3D411A7828F855760003B4A7 /* DetailPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailPresenter.swift; sourceTree = "<group>"; };
 		3D51131028F8102C0080BBA5 /* Result.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Result.swift; sourceTree = "<group>"; };
 		3DADF7BE28F04C1D002CA958 /* VIPER-App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "VIPER-App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3DADF7C128F04C1D002CA958 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -140,6 +146,9 @@
 			isa = PBXGroup;
 			children = (
 				3DADF7F028F7F598002CA958 /* DetailVC.swift */,
+				3D411A7628F855660003B4A7 /* DetailContracts.swift */,
+				3D411A7828F855760003B4A7 /* DetailPresenter.swift */,
+				3D411A7428F855510003B4A7 /* DetailRouter.swift */,
 			);
 			path = Detail;
 			sourceTree = "<group>";
@@ -260,9 +269,12 @@
 				3DADF7EA28F7211B002CA958 /* NetworkManager.swift in Sources */,
 				3DADF7E528F71E1B002CA958 /* HomePresenter.swift in Sources */,
 				3DADF7F128F7F598002CA958 /* DetailVC.swift in Sources */,
+				3D411A7528F855510003B4A7 /* DetailRouter.swift in Sources */,
+				3D411A7728F855660003B4A7 /* DetailContracts.swift in Sources */,
 				3DADF7C628F04C1D002CA958 /* HomeVC.swift in Sources */,
 				3DADF7C228F04C1D002CA958 /* AppDelegate.swift in Sources */,
 				3DADF7C428F04C1D002CA958 /* SceneDelegate.swift in Sources */,
+				3D411A7928F855760003B4A7 /* DetailPresenter.swift in Sources */,
 				3D51131128F8102C0080BBA5 /* Result.swift in Sources */,
 				3DADF7EE28F762FB002CA958 /* TableViewCell.swift in Sources */,
 				3DADF7E328F71E02002CA958 /* HomeInteractor.swift in Sources */,

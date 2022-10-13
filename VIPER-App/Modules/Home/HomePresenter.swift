@@ -5,7 +5,7 @@
 //  Created by Fatih Gursoy on 12.10.2022.
 //
 
-import Foundation
+import UIKit
 
 class HomePresenter: HomePresenterProtocol {
     
@@ -17,20 +17,18 @@ class HomePresenter: HomePresenterProtocol {
         interactor?.fetchData()
     }
     
-    func didSelect(_ article: Article) {
-        router?.toDetailVC()
+    func didSelect(from view: UIViewController,with article: Article) {
+        router?.toDetailVC(from: view, with: article)
     }
-     
 }
 
 extension HomePresenter: HomeInteractorOutput {
     
     func didFetch(_ articles: [Article]) {
-            view?.showArticles(articles: articles)
+        view?.showArticles(articles: articles)
     }
     
     func onError() {
         view?.showError(error: "Error")
     }
-    
 }

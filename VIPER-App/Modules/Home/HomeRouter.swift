@@ -15,17 +15,19 @@ class HomeRouter: HomeRouterProtocol {
         let view = storyboard.instantiateViewController(withIdentifier: "HomeVC") as! HomeVC
         let presenter = HomePresenter()
         let interactor = HomeInteractor()
+        let router = HomeRouter()
         
         view.presenter = presenter
         presenter.interactor = interactor
         presenter.view = view
+        presenter.router = router
         
         interactor.presenter = presenter
         return view
     }
     
-    func toDetailVC() {
-        
-        
+    func toDetailVC(from view: UIViewController, with article: Article) {
+        let detailView = DetailRouter.createDetailView(with: article)
+        view.navigationController?.pushViewController(detailView, animated: true)
     }
 }

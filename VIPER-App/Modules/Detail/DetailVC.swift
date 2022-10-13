@@ -7,14 +7,18 @@
 
 import UIKit
 
-class DetailVC: UIViewController {
+class DetailVC: UIViewController, DetailViewProtocol {
 
+    @IBOutlet private weak var titleLabel: UILabel!
+    var presenter: DetailPresenterProtocol?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        
+        presenter?.viewDidLoad()
     }
     
-
+    func showArticles(article: Article) {
+        titleLabel.text = article.articleDescription
+    }
 
 }

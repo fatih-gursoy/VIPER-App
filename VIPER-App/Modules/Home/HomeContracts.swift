@@ -5,7 +5,7 @@
 //  Created by Fatih Gursoy on 7.10.2022.
 //
 
-import Foundation
+import UIKit
 
 //MARK: - View
 
@@ -23,7 +23,7 @@ protocol HomePresenterProtocol: AnyObject {
     var router: HomeRouterProtocol? {get set}
     
     func viewDidLoad()
-    func didSelect(_ article: Article)
+    func didSelect(from view: UIViewController, with article: Article)
 }
 
 //MARK: - Interactor
@@ -41,5 +41,5 @@ protocol HomeInteractorOutput: AnyObject {
 //MARK: - Router
 
 protocol HomeRouterProtocol: AnyObject {
-    func toDetailVC()
+    func toDetailVC(from view: UIViewController, with article: Article)
 }
