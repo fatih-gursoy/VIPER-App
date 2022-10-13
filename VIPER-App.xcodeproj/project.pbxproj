@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3D411A7328F847A50003B4A7 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 3D411A7228F847A50003B4A7 /* Kingfisher */; };
+		3D51131128F8102C0080BBA5 /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D51131028F8102C0080BBA5 /* Result.swift */; };
 		3DADF7C228F04C1D002CA958 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DADF7C128F04C1D002CA958 /* AppDelegate.swift */; };
 		3DADF7C428F04C1D002CA958 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DADF7C328F04C1D002CA958 /* SceneDelegate.swift */; };
 		3DADF7C628F04C1D002CA958 /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DADF7C528F04C1D002CA958 /* HomeVC.swift */; };
@@ -19,9 +21,13 @@
 		3DADF7E528F71E1B002CA958 /* HomePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DADF7E428F71E1A002CA958 /* HomePresenter.swift */; };
 		3DADF7E728F71E31002CA958 /* HomeRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DADF7E628F71E31002CA958 /* HomeRouter.swift */; };
 		3DADF7EA28F7211B002CA958 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DADF7E928F7211B002CA958 /* NetworkManager.swift */; };
+		3DADF7EE28F762FB002CA958 /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DADF7EC28F762FB002CA958 /* TableViewCell.swift */; };
+		3DADF7EF28F762FB002CA958 /* TableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3DADF7ED28F762FB002CA958 /* TableViewCell.xib */; };
+		3DADF7F128F7F598002CA958 /* DetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DADF7F028F7F598002CA958 /* DetailVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3D51131028F8102C0080BBA5 /* Result.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Result.swift; sourceTree = "<group>"; };
 		3DADF7BE28F04C1D002CA958 /* VIPER-App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "VIPER-App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3DADF7C128F04C1D002CA958 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3DADF7C328F04C1D002CA958 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -36,6 +42,9 @@
 		3DADF7E428F71E1A002CA958 /* HomePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePresenter.swift; sourceTree = "<group>"; };
 		3DADF7E628F71E31002CA958 /* HomeRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeRouter.swift; sourceTree = "<group>"; };
 		3DADF7E928F7211B002CA958 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		3DADF7EC28F762FB002CA958 /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
+		3DADF7ED28F762FB002CA958 /* TableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TableViewCell.xib; sourceTree = "<group>"; };
+		3DADF7F028F7F598002CA958 /* DetailVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,6 +52,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3D411A7328F847A50003B4A7 /* Kingfisher in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -80,6 +90,7 @@
 		3DADF7D528F04EEF002CA958 /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				3DADF7EB28F762D5002CA958 /* TableViewCell */,
 				3DADF7C528F04C1D002CA958 /* HomeVC.swift */,
 				3DADF7D628F04F45002CA958 /* HomeContracts.swift */,
 				3DADF7E228F71E02002CA958 /* HomeInteractor.swift */,
@@ -128,6 +139,7 @@
 		3DADF7DD28F0542C002CA958 /* Detail */ = {
 			isa = PBXGroup;
 			children = (
+				3DADF7F028F7F598002CA958 /* DetailVC.swift */,
 			);
 			path = Detail;
 			sourceTree = "<group>";
@@ -145,6 +157,7 @@
 			isa = PBXGroup;
 			children = (
 				3DADF7DE28F056F2002CA958 /* ArticleModel.swift */,
+				3D51131028F8102C0080BBA5 /* Result.swift */,
 			);
 			path = Entity;
 			sourceTree = "<group>";
@@ -155,6 +168,15 @@
 				3DADF7E928F7211B002CA958 /* NetworkManager.swift */,
 			);
 			path = API;
+			sourceTree = "<group>";
+		};
+		3DADF7EB28F762D5002CA958 /* TableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				3DADF7EC28F762FB002CA958 /* TableViewCell.swift */,
+				3DADF7ED28F762FB002CA958 /* TableViewCell.xib */,
+			);
+			path = TableViewCell;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -173,6 +195,9 @@
 			dependencies = (
 			);
 			name = "VIPER-App";
+			packageProductDependencies = (
+				3D411A7228F847A50003B4A7 /* Kingfisher */,
+			);
 			productName = "VIPER-App";
 			productReference = 3DADF7BE28F04C1D002CA958 /* VIPER-App.app */;
 			productType = "com.apple.product-type.application";
@@ -201,6 +226,9 @@
 				Base,
 			);
 			mainGroup = 3DADF7B528F04C1D002CA958;
+			packageReferences = (
+				3D411A7128F847A50003B4A7 /* XCRemoteSwiftPackageReference "Kingfisher" */,
+			);
 			productRefGroup = 3DADF7BF28F04C1D002CA958 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -216,6 +244,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3DADF7CE28F04C1E002CA958 /* LaunchScreen.storyboard in Resources */,
+				3DADF7EF28F762FB002CA958 /* TableViewCell.xib in Resources */,
 				3DADF7CB28F04C1E002CA958 /* Assets.xcassets in Resources */,
 				3DADF7C928F04C1D002CA958 /* Main.storyboard in Resources */,
 			);
@@ -230,9 +259,12 @@
 			files = (
 				3DADF7EA28F7211B002CA958 /* NetworkManager.swift in Sources */,
 				3DADF7E528F71E1B002CA958 /* HomePresenter.swift in Sources */,
+				3DADF7F128F7F598002CA958 /* DetailVC.swift in Sources */,
 				3DADF7C628F04C1D002CA958 /* HomeVC.swift in Sources */,
 				3DADF7C228F04C1D002CA958 /* AppDelegate.swift in Sources */,
 				3DADF7C428F04C1D002CA958 /* SceneDelegate.swift in Sources */,
+				3D51131128F8102C0080BBA5 /* Result.swift in Sources */,
+				3DADF7EE28F762FB002CA958 /* TableViewCell.swift in Sources */,
 				3DADF7E328F71E02002CA958 /* HomeInteractor.swift in Sources */,
 				3DADF7E728F71E31002CA958 /* HomeRouter.swift in Sources */,
 				3DADF7D728F04F45002CA958 /* HomeContracts.swift in Sources */,
@@ -454,6 +486,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		3D411A7128F847A50003B4A7 /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/onevcat/Kingfisher.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 7.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		3D411A7228F847A50003B4A7 /* Kingfisher */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 3D411A7128F847A50003B4A7 /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = Kingfisher;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 3DADF7B628F04C1D002CA958 /* Project object */;
 }

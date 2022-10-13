@@ -10,18 +10,19 @@ import Foundation
 class HomeInteractor: HomeInteractorProtocol {
     
     private var networkManager: NetworkProtocol
-    
     weak var presenter: HomeInteractorOutput?
     
-    init(networkManager: NetworkProtocol) {
+    init(networkManager: NetworkProtocol = NetworkManager()) {
         self.networkManager = networkManager
     }
     
     func fetchData() {
         
-        networkManager.fetchData(endPoint: "") { [weak self] (result: [Article]) in
+        let api = "https://newsapi.org/v2/top-headlines?country=tr&apiKey=9fd690aefd6f4cc389f4307bd4070151"
+        
+        networkManager.fetchData(endPoint: api) { [weak self] (result: Result) in
             guard let self else {return}
-            self.presenter?.didFetch(result)
+            self.presenter?.didFetch(result.articles)
         }
     }
     

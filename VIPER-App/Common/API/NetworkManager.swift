@@ -16,13 +16,22 @@ class NetworkManager: NetworkProtocol {
     func fetchData<T: Decodable>(endPoint: String, completion: @escaping (T) -> Void) {
         
         guard let url = URL(string: endPoint) else { return }
-        let request = URLRequest(url: url)
+        let request = NSMutableURLRequest(url: url)
+        request.httpMethod = "GET"
         
-        let task = URLSession.shared.dataTask(with: request) { data, response, error in
-            
-        if let data {
-            guard let result = try? JSONDecoder().decode(T.self, from: data) else {return}
-                completion(result)
+        let task = URLSession.shared.dataTask(with: request as URLRequest) { data, response, error in
+
+            if error != nil {
+                print(error?.localizedDescription as Any)
+            } else {
+                guard let data else { return }
+                
+                do {
+                    let result = try JSONDecoder().decode(T.self, from: data)
+                    completion(result)
+                } catch {
+                    print(error.localizedDescription)
+                }
             }
         }
         task.resume()

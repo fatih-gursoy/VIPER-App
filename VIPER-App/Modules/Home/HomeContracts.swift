@@ -10,10 +10,9 @@ import Foundation
 //MARK: - View
 
 protocol HomeViewProtocol: AnyObject {
-    var presenter: HomePresenterProtocol? { get set }
-    
+    var presenter: HomePresenterProtocol? {get set}
     func showArticles(articles: [Article])
-    func showError()
+    func showError(error: String)
 }
 
 //MARK: - Presenter
@@ -42,6 +41,5 @@ protocol HomeInteractorOutput: AnyObject {
 //MARK: - Router
 
 protocol HomeRouterProtocol: AnyObject {
-    
-    
+    func toDetailVC()
 }
